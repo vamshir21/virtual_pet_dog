@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Interactive Dog</h1>
+        
+        <!-- Dog Image that reacts to hunger and happiness -->
+        <img id="dog" src="./images/dog-happy.gif" alt="Dog State" width="300">
+
+        <!-- Status text displaying the dog's condition -->
+        <p id="status">Your dog is happy!</p>
+
+        <!-- Buttons to feed or play with the dog -->
+        <div class="actions">
+            <button onclick="feedDog()">Feed</button>
+            <button onclick="playWithDog()">Play</button>
+        </div>
+
+        <!-- Progress bars for hunger and happiness -->
+        <div class="status-bars">
+            <label>Hunger: <progress id="hunger-meter" value="50" max="100"></progress></label>
+            <label>Happiness: <progress id="happiness-meter" value="50" max="100"></progress></label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

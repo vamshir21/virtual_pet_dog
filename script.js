@@ -23,7 +23,7 @@ function updateDogState() {
         dogImage.src = "./images/dog-happy.gif";
         statusMessage.textContent = "Your dog is very happy!";
     } else if (happiness <= 20) {
-        dogImage.src = "dog-sad.gif";
+        dogImage.src = "./images/dog-sad.gif";
         statusMessage.textContent = "Your dog is sad!";
     } else {
         dogImage.src = "./images/dog-neutral.gif";
